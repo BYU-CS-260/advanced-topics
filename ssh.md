@@ -47,3 +47,6 @@ If you are using Windows, remember that you will do this using Git Bash.
 
 ## Aside: Good Password Hygiene
 When you have to use passwords, such as on most websites, be sure to choose a long, random password to avoid attackers guessing your password and breaking into your account. Use a password manager to remember it and then copy and paste it or autofill it each time. Good password managers include 1Password, LastPass, and DashLane.
+
+## Fixing your SSH system
+If you mess up, try deleting your ~/.ssh folder on both your local and remote machines and going through the tutorial again. Here is a [Mac-specific tutorial from GitHub](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) that covers the same material as above.
