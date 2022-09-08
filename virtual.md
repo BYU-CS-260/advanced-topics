@@ -2,6 +2,7 @@
 You can create a Virtual Private Server on several different Cloud Platforms. 
 As shown below, a powerful physical server can run a set of virtual servers, 
 each using some of the hardware resources available on the physical server. 
+![](images/vps.jpeg)
 
 When you purchase a server, you get access to a server that looks and runs like it is your own machine. 
 You have root access on the machine and an IP address, and can otherwise configure the machine as you desire. 
