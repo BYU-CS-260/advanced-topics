@@ -1,3 +1,5 @@
+# Configuring a Domain
+
 In this tutorial, you will setup a DNS configuration for a server that is hosted with Digital Ocean. 
 The Domain Name Service (DNS) allows you to translate the name of the server you want to connect to (e.g. emmasmith.org) 
 into the IP address of this server (e.g. 176.32.98.166).
