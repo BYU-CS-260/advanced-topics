@@ -3,3 +3,4 @@ If you are having no trouble with the other aspects of the class, you might want
 - [Computing Environments](computingEnvironments.md)
 - [Mastering the Command Line](commandLine.md)
 - [Virtual Private Servers](virtual.md)
+- [SSH Keys](ssh.md)
