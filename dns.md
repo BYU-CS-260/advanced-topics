@@ -53,7 +53,7 @@ You need to add two DNS records and delete the two default records that are ther
 
 When you have added the records successfully your "Advanced DNS" tab will contain records that look like this:
 
-![](namecheaprecords.PNG)
+![](namecheaprecords.png)
 
 It may take some time for these changes to be updated throughout the Internet (15 to 30 minutes), but after some time you should be able to browse to your website using the domain name you purchased and any subdomains. For example, if you try the following domains, they should go to the same site:
 
