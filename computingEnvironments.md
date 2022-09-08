@@ -6,14 +6,14 @@ Regardless of which operating system you use, you can be successful.
 Some examples are listed below.
 
 - Apple
- - Mac OS makes it easy to use the terminal and command line tools that are similar to Linux. You may want to install 
+  - Mac OS makes it easy to use the terminal and command line tools that are similar to Linux. You may want to install 
 [iTerm2](https://iterm2.com/) and use this in place of the default terminal.
 - Windows
- - Use [Git Bash](https://gitforwindows.org/) as your terminal environment. 
+  - Use [Git Bash](https://gitforwindows.org/) as your terminal environment. 
  This will provide you a functional terminal that works like Linux, with integration for Git as well. 
  I do not recommend using the Linux Subsystem for Windows. This has regularly caused problems for students in the class.
 - Linux
- - If you use Linux as your main OS, you will have everything you need. You can use the department open labs. 
+  - If you use Linux as your main OS, you will have everything you need. You can use the department open labs. 
 You can also install a Linux VM on your Mac or Windows machine. 
 You can get VMWare Player or VirtualBox for free and install Linux for free as well. 
 Read this guide to [choosing VM software](https://www.digitaltrends.com/computing/best-virtual-machine-apps-for-mac-linux-and-windows-pcs/). 
