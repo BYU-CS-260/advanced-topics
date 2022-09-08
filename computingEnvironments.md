@@ -32,7 +32,7 @@ Some good choices, roughly in order of preference, include:
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Atom](https://atom.io/)
 - [Sublime Text](https://www.sublimetext.com/3)
-- Vim(https://vim.sourceforge.io/download.php)
-- Emacs(https://www.gnu.org/software/emacs/download.html)
+- [Vim](https://vim.sourceforge.io/download.php)
+- [Emacs](https://www.gnu.org/software/emacs/download.html)
 All of these are available on each main operating system. 
 All are also free, although Sublime asks you to buy a license for continued use.
