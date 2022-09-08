@@ -30,3 +30,7 @@ Be sure to substitute your own username and IP address.
 
 You will do everything on your Digital Ocean machine with this username so keep track of it. 
 When you need to do something that requires root access, you will use the sudo command. 
+
+## Fixing Your Server
+
+If you mess something up with your server and you are unable to use ssh to access it any more, you can use this guide [https://www.digitalocean.com/docs/droplets/resources/console/](https://www.digitalocean.com/docs/droplets/resources/console/) to regain access to your server. It shows you how to access the console for your server, which is like having a monitor and keyboard plugged into your virtual machine. You can do everything you would normally do with your root or user account, fix things up, and then go back to using ssh. 
