@@ -8,34 +8,35 @@ We will show you how to use DNS and Nginx to serve your website on a domain of y
 
 Doing this involves the following steps:
 
-1. Obtain a Domain Name
-   - Option 1: AWS Route53
+## Obtain a Domain Name
+### Option 1: AWS Route53
 
 Create an account with AWS. Use Route53 to buy a domain name. You can usually find a cheap name with an unpopular suffix. 
 For example, at the time of this writing, .click domains are $3/year. 
 
-   - Option 2: Namecheap
+### Option 2: Namecheap
 
 Visit NameCheap to purchase a domain name. You will need to create an account there. A domain name may cost you about $10 for a year. 
 For example, you may be able to purchase a domain name that uses your real name, such as emmasmith.org. 
 You can pick whatever you like. Navigate to "Configure Namecheap DNS" if you want to use NameCheap.
 
-2. Configure your DNS using Route53 
-   - Log in to AWS using your AWS account. 
+## Configure your DNS 
+### Configure your DNS Using Route53
+1. Log in to AWS using your AWS account. 
 
 Follow these instructions to [purchase and register a domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure). 
 After you purchase your domain name you need to respond to an email that the naming authority will send to you. 
 After that you need to wait until AWS recognizes your purchase and it creates a Hosted Zone for you domain. 
 Then you are ready to set up your DNS. This is also done with the Routee53 service.
 
-     - Navigate to Hosted Zones and select the zone that matches the host name you just purchased.
-     - Add a new A record and leave the name field empty for the host, and put the IP address of your Digital Ocean machine in the value field. This will be the DNS record that maps your root hostname to your server. For example, if the hostname your purchased was cs260.click then https://cs260.click would now go to your server. Save this new record.
-     - Click "Add new record". Choose "A record" and enter "*" for the host, and the IP address of your Digital Ocean machine in the value field. This will map all of your subdomains to your server. For example, if the hostname your purchased was cs260.click then https://lab1.cs260.click would now go to your server. You are going to create several subdomains throughout the class. Save this new record.
+2. Navigate to Hosted Zones and select the zone that matches the host name you just purchased.
+3. Add a new A record and leave the name field empty for the host, and put the IP address of your Digital Ocean machine in the value field. This will be the DNS record that maps your root hostname to your server. For example, if the hostname your purchased was cs260.click then https://cs260.click would now go to your server. Save this new record.
+4. Click "Add new record". Choose "A record" and enter "*" for the host, and the IP address of your Digital Ocean machine in the value field. This will map all of your subdomains to your server. For example, if the hostname your purchased was cs260.click then https://lab1.cs260.click would now go to your server. You are going to create several subdomains throughout the class. Save this new record.
  
  Congratulations! You've now configured your own Domain! Skip Configure NameCheap DNS and 
  navigate go directly to "Understanding NGINX configuration" to continue reading.
  
- 3. Configure your DNS using Namecheap
+### Configure your DNS using Namecheap
 
 Do not follow these steps if you are already set up DNS using AWS Route53. You only need to setup your DNS records in one place.
 
@@ -46,9 +47,9 @@ To do this, the first step is to add a new DNS record. In Name Cheap, navigate t
 
 You need to add two DNS records and delete the two default records that are there. (The defaults are a CNAME and a URL redirect that shows a parked web page).
 
-- Click "Add new record". Choose "A record" and enter "@" for the host, the IP address of your Digital Ocean machine, and "20 minutes" for the TTL. Save this.
-- Click "Add new record". Choose "A record" and enter "*" for the host, the IP address of your Digital Ocean machine, and "20 minutes" for the TTL. Save this.
-- Delete the other two records. 
+1. Click "Add new record". Choose "A record" and enter "@" for the host, the IP address of your Digital Ocean machine, and "20 minutes" for the TTL. Save this.
+2. Click "Add new record". Choose "A record" and enter "*" for the host, the IP address of your Digital Ocean machine, and "20 minutes" for the TTL. Save this.
+3. Delete the other two records. 
 
 When you have added the records successfully your "Advanced DNS" tab will contain records that look like this:
 
