@@ -5,3 +5,4 @@ If you are having no trouble with the other aspects of the class, you might want
 - [Virtual Private Servers](virtual.md)
 - [SSH Keys](ssh.md)
 - [Digital Ocean Servers](digocean.md)
+- [Configuring a Domain](dns.md)
