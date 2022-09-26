@@ -50,3 +50,6 @@ When you have to use passwords, such as on most websites, be sure to choose a lo
 
 ## Fixing your SSH system
 If you mess up, try deleting your ~/.ssh folder on both your local and remote machines and going through the tutorial again. Here is a [Mac-specific tutorial from GitHub](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) that covers the same material as above.
+
+## Video
+This [video](https://medium.com/sonabstudios/setting-up-github-on-aws-cloud9-with-ssh-2545c4f989ea) has been helpful for some students.
