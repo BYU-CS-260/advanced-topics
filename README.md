@@ -5,10 +5,15 @@ In this tutorial, we will show you how to use a local development environment to
 2) If you are on Windows, install [Git Bash] or use the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about).  This will provide you with a linux terminal.  If you are on a Apple Mac IOS computer or Linux, you can just use the terminal
 3) Install [node and npm](https://nodejs.org/en/download/).  This will allow you to run a web server.
 4) Go to GitHub and create a repository for this activity.
+
 ![](images/NewRepository.png)
+
 Call it "localDevelopment".
+
 5) Get the repository URL from your newly created repository by pressing the code button and copying the URL.
+
 ![](images/RepositoryURL.png)
+
 6) On your laptop, or desktop computer, use your terminal to make a directory where you will store all of your source code. Give it a reasonable name like source. Change into that directory using your command shell.
 ```
 mkdir source
