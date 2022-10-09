@@ -57,6 +57,7 @@ The first time you push you might be prompted for your GitHub user name and Pers
 root@cs260:~/source/localDevelopment # git push
 Username for 'https://github.com': yourGitHubUserName
 Password for 'https://yourGitHubUserName@github.com': yourPersonalAccessToken
+```
 
 12) Go to GitHub and view your repository. It should show your newly added "index.html" content.
 
