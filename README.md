@@ -1,6 +1,7 @@
 # Local Development Environment
 In this tutorial, we will show you how to use a local development environment to create web content.
-#Select A [local editor](computingEnvironments.md), we suggest VSCode.  Install it on your laptop
+
+# Select A [local editor](computingEnvironments.md), we suggest VSCode.  Install it on your laptop
 
 # Advanced Topics
 If you are having no trouble with the other aspects of the class, you might want to explore some of these advanced topics.  Don't feel like any of these are essential to completing the class.  They are just optional topics that you may find interesting.
