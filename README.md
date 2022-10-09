@@ -9,7 +9,6 @@ In this tutorial, we will show you how to use a local development environment to
 ![](images/NewRepository.png)
 
 Call it "localDevelopment".
-
 5) Get the repository URL from your newly created repository by pressing the code button and copying the URL.
 
 ![](images/RepositoryURL.png)
@@ -59,25 +58,36 @@ root@cs260:~/source/localDevelopment # git push
 Username for 'https://github.com': yourGitHubUserName
 Password for 'https://yourGitHubUserName@github.com': yourPersonalAccessToken
 
-12) Go to GitHub and view your repository. It should show your newly added content.
+12) Go to GitHub and view your repository. It should show your newly added "index.html" content.
 
-13) Now clone the repository on your production EC2 server and copy the files over to your website directory. You will only need to clone your repository once, but you will have to pull down changes, and copy the files to your website directory every time you want to get the latest files.  You can use the terminal in Cloud9, or you can 
-To clone your repository first SSH into your production server.
-From your home directory (cd ~ if you are not already there) make a directory called something like source where you will store all of repositories that you clone using git. Move to your source directory cd ~/source.
-Use git clone just like was done to copy the source to your development machine. (See the instructions above for cloning a repository.)
-This should create a directory called portfolio on your production server in the location where you ran the clone command.
-Copy your portfolio directory over to your website content directory. Make sure you use sudo if you are not the root user so that you have the correct rights for NGINX's website directory.
-sudo cp -r ~/source/portfolio /var/www/html/portfolio
+13) Most commercial web servers will host web content from the directory "/var/www/html".  To make this happen, you will need to change your caddy file to use this directory.  ```sudo nano /etc/caddy/Caddyfile``` and change "root * /usr/share/caddy" to "root * /var/www/html" and restart caddy 
+```
+sudo systemctl restart caddy
+```
+14) Now clone the repository on your production EC2 server and copy the files over to your website directory. You will only need to clone your repository once, but you will have to pull down changes, and copy the files to your website directory every time you want to get the latest files.  You can use the terminal in Cloud9, or you can use [SSH Keys](ssh.md) to connect to your server.
+
+From your home directory (cd ~ if you are not already there) make a directory called something like source where you will store all of repositories that you clone using git. Move to your source directory ```cd ~/source```.
+
+Use git clone just like was done to copy the source to your development machine
+```
+git clone https://github.com/<yourAccountHere>/localDevelopment.git
+```
+This should create a directory called localDevelopment on your production server in the location where you ran the clone command.
+
+Copy your portfolio directory over to your website content directory. Make sure you use sudo if you are not the root user so that you have the correct rights.
+```
+sudo cp -r ~/source/localDevelopment /var/www/html/localDevelopment
+```
 Visit your production server in a browser to verify that you can see your new content.
-https://yourdomain.click/portfolio
-On your development (local) machine, make some kind of a change to your index.html file. Commit and push the changes to GiHub. This should automatically push your changes to your web server if you set up your CD process. Otherwise repeat these steps every time you want to publish a change to your production website.
-SSH into your production server
-Change to your repository source directory.
-Pull the latest content down using git pull.
-Copy the changed files from your repository directory (~/source/repo) to your website directory (/var/www/html).
-Congratulations! This is your development workflow! We will be using this cycle regularly throughout the class.
+https://yourdomain.click/localDevelopment
 
-Turn a screenshot of your web page, including the URL that shows your portfolio on your production server.
+15) On your development (local) machine, make some kind of a change to your index.html file. Commit and push the changes to GiHub. This should automatically push your changes to your web server if you set up your CD process. Otherwise repeat these steps every time you want to publish a change to your production website.
+- SSH into your production server or use the Cloud9 terminal
+- Change to your repository source directory.
+- Pull the latest content down using git pull.
+- Copy the changed files from your repository directory (~/source/repo) to your website directory (/var/www/html).
+Congratulations! This is your local development workflow! 
+
 
 # Advanced Topics
 If you are having no trouble with the other aspects of the class, you might want to explore some of these advanced topics.  Don't feel like any of these are essential to completing the class.  They are just optional topics that you may find interesting.
